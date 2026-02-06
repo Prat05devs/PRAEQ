@@ -1,10 +1,25 @@
 import React, { useState } from 'react';
+import SEO from '../components/SEO';
+import { breadcrumbSchema } from '../components/schemas';
 
 const Ecosystem: React.FC = () => {
   const [activeNode, setActiveNode] = useState('Creative Labs');
 
+  const ecosystemSchema = breadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Infrastructure & Media Strategy', url: '/ecosystem' }
+  ]);
+
   return (
-    <div className="flex flex-col w-full bg-bone text-charcoal font-display selection:bg-orange-burnished/20 selection:text-charcoal">
+    <>
+      <SEO 
+        title="Influencer Management & Media Strategy Infrastructure"
+        description="PRAEQ's Dialogue Axis: Elite influencer management, content creator partnerships, and media strategy consulting. We architect digital brand narratives for social media talent and modern authority figures across platforms."
+        canonical="/ecosystem"
+        keywords="influencer management company, content creator management, media strategy consulting, social media talent management, influencer partnerships, digital talent agency, brand ambassador management, influencer campaign management"
+        schema={ecosystemSchema}
+      />
+      <div className="flex flex-col w-full bg-bone text-charcoal font-display selection:bg-orange-burnished/20 selection:text-charcoal">
       
       {/* Hero Section with Background Image */}
       <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden">
@@ -12,7 +27,7 @@ const Ecosystem: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img 
             src="/infraBg.jpg" 
-            alt="Infrastructure Background"
+            alt="Influencer Management Infrastructure - Media Strategy Consulting"
             className="w-full h-full object-cover opacity-50 mix-blend-multiply filter contrast-100"
           />
           <div className="absolute inset-0 bg-black/30 backdrop-blur-[1px]"></div>
@@ -20,17 +35,15 @@ const Ecosystem: React.FC = () => {
 
         {/* Content */}
         <div className="relative z-10 w-full max-w-[1920px] mx-auto px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 py-24 md:py-32">
-          <section className="flex flex-col max-w-5xl gap-6 md:gap-10">
         <div className="flex flex-col gap-4 md:gap-6">
-          <span className="text-[10px] md:text-[11px] font-bold uppercase tracking-architectural font-sans" style={{color: '#F5A76B'}}>Internal Labs</span>
-          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-sans font-light tracking-tight leading-[1.05]" style={{color: '#F5F5F0'}}>
-            Fame is <br/>Engineered In-House
-          </h2>
+          <span className="text-[10px] md:text-[11px] font-bold uppercase tracking-architectural font-sans" style={{color: '#F5A76B'}}>Dialogue Axis</span>
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-sans font-light tracking-tight leading-[1.05]" style={{color: '#F5F5F0'}}>
+            Influencer Management <br/>& Media Strategy
+          </h1>
         </div>
         <p className="text-lg md:text-2xl lg:text-3xl font-normal max-w-3xl leading-relaxed font-sans text-balance" style={{color: '#F5F5F0'}}>
-          We don't rely on third parties. We own the machinery. Every talent we represent gains exclusive access to the INFRASTRUCTURE our proprietary engine of creation.
+          Elite content creator management and influencer partnerships. We architect digital brand narratives for social media talent, building media strategies that amplify authority across every platform.
         </p>
-      </section>
         </div>
       </section>
 
@@ -41,11 +54,11 @@ const Ecosystem: React.FC = () => {
       <section className="relative w-full flex flex-col gap-8 md:gap-16">
         <div className="flex flex-col md:flex-row justify-between items-end border-b border-charcoal/10 pb-6 md:pb-8 gap-4 md:gap-6">
           <div>
-            <h3 className="text-3xl md:text-4xl font-serif text-charcoal mb-2 md:mb-4">The Machinery</h3>
-            <p className="text-charcoal/90 max-w-lg font-sans text-base font-normal leading-relaxed">Interact with the network nodes to reveal strategic capabilities.</p>
+            <h2 className="text-3xl md:text-4xl font-serif text-charcoal mb-2 md:mb-4">Influencer Management Infrastructure</h2>
+            <p className="text-charcoal/90 max-w-lg font-sans text-base font-normal leading-relaxed">Interact with the network nodes to reveal our content creator management capabilities and media strategy consulting services.</p>
           </div>
           <div className="text-right hidden md:block">
-            <p className="text-[10px] font-mono text-orange-burnished uppercase tracking-widest">Fig 1.1 — System Topography</p>
+            <p className="text-[10px] font-mono text-orange-burnished uppercase tracking-widest">Fig 1.1 — Media Strategy System</p>
           </div>
         </div>
 
@@ -116,19 +129,19 @@ const Ecosystem: React.FC = () => {
                     <div className="h-px w-full bg-charcoal/10"></div>
                     <div className="space-y-4 md:space-y-6 font-sans">
                         <p className="text-base md:text-lg text-charcoal leading-7 md:leading-8 font-normal">
-                            {activeNode === 'Studio Syndicate' && "Private, high-end studios designed specifically for elite interviews and professional podcasting."}
-                            {activeNode === 'Creative Labs' && "In-house graphic architects and video editors who ensure every frame of your content is culturally significant."}
-                            {activeNode === 'Social Engine' && "Master strategists who control the algorithm and the narrative. We provide the gravity."}
-                            {activeNode === 'Legal' && "Safeguarding the empire. Contracts, negotiations, and intellectual property defense."}
-                            {activeNode === 'Content Studios' && "From 8K broadcast facilities to rapid-response social content suites."}
+                            {activeNode === 'Studio Syndicate' && "Elite content production facilities designed for influencer interviews, podcast recording, and professional media content creation."}
+                            {activeNode === 'Creative Labs' && "In-house visual architects and video editors ensuring every piece of social media content is strategically designed for maximum engagement."}
+                            {activeNode === 'Social Engine' && "Expert media strategists who architect influencer campaigns, content creator partnerships, and social media narratives that dominate platforms."}
+                            {activeNode === 'Legal' && "Comprehensive legal support for influencer contracts, brand partnership negotiations, content rights management, and intellectual property protection."}
+                            {activeNode === 'Content Studios' && "From 8K broadcast facilities to rapid-response social content suites optimized for content creators and influencer production."}
                         </p>
                     </div>
                     <div className="space-y-3 pt-2 md:pt-4 font-sans">
-                        <h5 className="text-[9px] md:text-[10px] font-bold text-charcoal uppercase tracking-architectural">Capabilities</h5>
+                        <h5 className="text-[9px] md:text-[10px] font-bold text-charcoal uppercase tracking-architectural">Influencer Management Capabilities</h5>
                         <ul className="text-sm text-charcoal space-y-2 md:space-y-3">
-                            <li className="flex items-center gap-3"><div className="size-1.5 rounded-full bg-orange-burnished"></div> Elite Production</li>
-                            <li className="flex items-center gap-3"><div className="size-1.5 rounded-full bg-navy-premium"></div> Brand Architecture</li>
-                            <li className="flex items-center gap-3"><div className="size-1.5 rounded-full bg-navy-premium"></div> Narrative Control</li>
+                            <li className="flex items-center gap-3"><div className="size-1.5 rounded-full bg-orange-burnished"></div> Content Creator Management</li>
+                            <li className="flex items-center gap-3"><div className="size-1.5 rounded-full bg-navy-premium"></div> Social Media Strategy</li>
+                            <li className="flex items-center gap-3"><div className="size-1.5 rounded-full bg-navy-premium"></div> Influencer Partnerships</li>
                         </ul>
                     </div>
                 </div>
@@ -143,53 +156,54 @@ const Ecosystem: React.FC = () => {
       {/* Physical Layer */}
       <section className="flex flex-col gap-8 md:gap-12">
         <div className="flex flex-col gap-2 md:gap-3">
-            <span className="text-[9px] md:text-[10px] font-mono text-orange-burnished uppercase tracking-widest font-bold">The Physical Layer</span>
-            <h3 className="text-3xl md:text-4xl font-serif tracking-tight text-charcoal">Global Facilities</h3>
+            <span className="text-[9px] md:text-[10px] font-mono text-orange-burnished uppercase tracking-widest font-bold">Content Creator Facilities</span>
+            <h2 className="text-3xl md:text-4xl font-serif tracking-tight text-charcoal">Global Production Infrastructure</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
             <div className="group flex flex-col gap-4 md:gap-5">
                 <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-200 shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2670&auto=format&fit=crop" alt="Audio Suite Alpha" className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105 contrast-[0.95]" />
+                    <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2670&auto=format&fit=crop" alt="Influencer Podcast Studio - Content Creator Recording Facilities" className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105 contrast-[0.95]" />
                     <div className="absolute bottom-4 left-4 bg-white/95 text-charcoal text-[9px] md:text-[10px] px-3 py-1.5 uppercase tracking-architectural font-mono border border-charcoal/10 font-bold">Loc: London, UK</div>
                 </div>
                 <div className="flex flex-col px-1">
                     <div className="flex justify-between items-baseline border-b border-charcoal/10 pb-3 mb-3">
-                        <h4 className="font-bold text-charcoal font-sans text-base md:text-lg uppercase tracking-wide">The Studio Syndicate</h4>
-                        <span className="text-[9px] md:text-[10px] font-mono text-orange-burnished">AUDIO</span>
+                        <h4 className="font-bold text-charcoal font-sans text-base md:text-lg uppercase tracking-wide">Content Creator Studios</h4>
+                        <span className="text-[9px] md:text-[10px] font-mono text-orange-burnished">PODCAST</span>
                     </div>
-                    <p className="text-sm md:text-base text-charcoal/80 font-sans font-normal leading-relaxed">Acoustically isolated environments for podcasting and voice-over work.</p>
+                    <p className="text-sm md:text-base text-charcoal/80 font-sans font-normal leading-relaxed">Acoustically optimized environments for influencer podcasting, interviews, and professional audio content production.</p>
                 </div>
             </div>
              <div className="group flex flex-col gap-4 md:gap-5">
                 <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-200 shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?q=80&w=2574&auto=format&fit=crop" alt="Visual Editing Bay" className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105 contrast-[0.95]" />
+                    <img src="https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?q=80&w=2574&auto=format&fit=crop" alt="Social Media Content Editing - Video Production for Influencers" className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105 contrast-[0.95]" />
                     <div className="absolute bottom-4 left-4 bg-white/95 text-charcoal text-[9px] md:text-[10px] px-3 py-1.5 uppercase tracking-architectural font-mono border border-charcoal/10 font-bold">Loc: New York, NY</div>
                 </div>
                 <div className="flex flex-col px-1">
                     <div className="flex justify-between items-baseline border-b border-charcoal/10 pb-3 mb-3">
-                        <h4 className="font-bold text-charcoal font-sans text-base md:text-lg uppercase tracking-wide">The Creative Labs</h4>
-                        <span className="text-[9px] md:text-[10px] font-mono text-orange-burnished">VISUAL</span>
+                        <h4 className="font-bold text-charcoal font-sans text-base md:text-lg uppercase tracking-wide">Visual Content Labs</h4>
+                        <span className="text-[9px] md:text-[10px] font-mono text-orange-burnished">VIDEO</span>
                     </div>
-                    <p className="text-sm md:text-base text-charcoal/80 font-sans font-normal leading-relaxed">High-performance workstations for real-time rendering and color grading.</p>
+                    <p className="text-sm md:text-base text-charcoal/80 font-sans font-normal leading-relaxed">High-performance editing suites for social media content, influencer videos, and real-time rendering for content creators.</p>
                 </div>
             </div>
              <div className="group flex flex-col gap-4 md:gap-5">
                 <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-200 shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2669&auto=format&fit=crop" alt="Strategy War Room" className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105 contrast-[0.95]" />
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2669&auto=format&fit=crop" alt="Influencer Strategy Planning - Media Consulting Services" className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105 contrast-[0.95]" />
                     <div className="absolute bottom-4 left-4 bg-white/95 text-charcoal text-[9px] md:text-[10px] px-3 py-1.5 uppercase tracking-architectural font-mono border border-charcoal/10 font-bold">Loc: Tokyo, JP</div>
                 </div>
                 <div className="flex flex-col px-1">
                     <div className="flex justify-between items-baseline border-b border-charcoal/10 pb-3 mb-3">
-                        <h4 className="font-bold text-charcoal font-sans text-base md:text-lg uppercase tracking-wide">The Social Engine</h4>
+                        <h4 className="font-bold text-charcoal font-sans text-base md:text-lg uppercase tracking-wide">Media Strategy Hub</h4>
                         <span className="text-[9px] md:text-[10px] font-mono text-orange-burnished">STRATEGY</span>
                     </div>
-                    <p className="text-sm md:text-base text-charcoal/80 font-sans font-normal leading-relaxed">Soundproofed environments for high-stakes negotiation and planning.</p>
+                    <p className="text-sm md:text-base text-charcoal/80 font-sans font-normal leading-relaxed">Dedicated spaces for influencer partnership planning, social media strategy development, and brand collaboration negotiations.</p>
                 </div>
             </div>
         </div>
       </section>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

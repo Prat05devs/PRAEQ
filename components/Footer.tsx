@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="w-full relative z-40 pt-20 pb-8 px-4 md:px-8 lg:px-12 overflow-hidden">
+    <footer className="w-full relative z-40 pt-12 md:pt-20 pb-6 md:pb-8 px-4 md:px-8 lg:px-12 overflow-hidden">
       
       {/* Background Image Section - Behind the Card */}
       <div className="absolute inset-0 z-0">
@@ -19,9 +19,9 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Floating Card Container */}
-      <div className="relative z-10 mx-auto max-w-[1920px] bg-white rounded-[2.5rem] p-8 md:p-16 lg:p-20 shadow-2xl shadow-black/20 border border-white/10">
+      <div className="relative z-10 mx-auto max-w-[1920px] bg-white rounded-2xl md:rounded-[2.5rem] p-6 md:p-16 lg:p-20 shadow-2xl shadow-black/20 border border-white/10">
         
-        <div className="flex flex-col lg:flex-row justify-between gap-16 lg:gap-32">
+        <div className="flex flex-col lg:flex-row justify-between gap-10 md:gap-16 lg:gap-32">
           
           {/* Brand Column */}
           <div className="flex flex-col gap-8 max-w-md">
@@ -34,10 +34,10 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Links Columns */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-12 lg:gap-24 flex-1 lg:max-w-4xl">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 lg:gap-24 flex-1 lg:max-w-4xl">
             
             {/* Column 1 */}
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-4 md:gap-6">
                 <h4 className="font-sans text-sm font-bold uppercase tracking-architectural text-charcoal">Sectors</h4>
                 <ul className="flex flex-col gap-4">
                     <li><Link to="/legacy" className="font-sans text-base text-charcoal/80 hover:text-orange-burnished transition-colors">Sonic Spectrum</Link></li>
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
             </div>
 
             {/* Column 2 */}
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-4 md:gap-6">
                 <h4 className="font-sans text-sm font-bold uppercase tracking-architectural text-charcoal">Agency</h4>
                 <ul className="flex flex-col gap-4">
                     <li><Link to="/about" className="font-sans text-base text-charcoal/80 hover:text-orange-burnished transition-colors">Philosophy</Link></li>
@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
             </div>
 
              {/* Column 3 */}
-             <div className="flex flex-col gap-6">
+             <div className="flex flex-col gap-4 md:gap-6">
                 <h4 className="font-sans text-sm font-bold uppercase tracking-architectural text-charcoal">Connect</h4>
                 <ul className="flex flex-col gap-4">
                     <li><Link to="/submission" className="font-sans text-base text-charcoal/80 hover:text-orange-burnished transition-colors">Inquiry</Link></li>
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="relative z-10 mt-20 pt-8 border-t border-charcoal/5 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="relative z-10 mt-12 md:mt-20 pt-6 md:pt-8 border-t border-charcoal/5 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-6">
             <p className="font-sans text-xs sm:text-sm text-charcoal/60 font-medium">© 2024 PRAEQ Global. All rights reserved.</p>
             <div className="flex flex-wrap justify-center gap-8">
                 <Link to="#" className="font-sans text-xs sm:text-sm text-charcoal/60 hover:text-charcoal transition-colors font-medium">Privacy Policy</Link>

@@ -1,8 +1,25 @@
 import React from 'react';
+import SEO from '../components/SEO';
+import { breadcrumbSchema, organizationSchema } from '../components/schemas';
 
 const GlobalMap: React.FC = () => {
+  const mapBreadcrumb = breadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Global Network', url: '/globalmap' }
+  ]);
+
+  const combinedSchema = [mapBreadcrumb, organizationSchema];
+
   return (
-    <main className="relative flex-1 w-full min-h-[100dvh] bg-bone overflow-hidden flex flex-col pt-20">
+    <>
+      <SEO 
+        title="Global Talent Management Network | PRAEQ Worldwide Brand Architecture"
+        description="PRAEQ's global talent management and brand architecture network spans major markets worldwide. International reach for music artists, influencers, and real estate brands. Strategic brand consulting across continents."
+        canonical="/globalmap"
+        keywords="global talent management, international brand architecture, worldwide talent agency, global brand consulting, international influencer management, global music talent management, worldwide brand strategy, international brand development"
+        schema={combinedSchema}
+      />
+      <main className="relative flex-1 w-full min-h-[100dvh] bg-bone overflow-hidden flex flex-col pt-20">
         {/* Background Map Image - Object Cover with fixed center anchoring */}
         <div className="absolute inset-0 z-0 opacity-10 pointer-events-none mix-blend-multiply flex items-center justify-center">
             <img 
@@ -114,6 +131,7 @@ const GlobalMap: React.FC = () => {
              </div>
         </div>
     </main>
+    </>
   );
 };
 

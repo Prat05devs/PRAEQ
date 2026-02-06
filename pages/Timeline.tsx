@@ -1,9 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
+import { breadcrumbSchema, organizationSchema } from '../components/schemas';
 
 const Timeline: React.FC = () => {
+  const timelineBreadcrumb = breadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Process', url: '/timeline' }
+  ]);
+
+  const combinedSchema = [timelineBreadcrumb, organizationSchema];
+
   return (
-    <main className="relative w-full flex flex-col items-center bg-bone font-display text-charcoal pt-20">
+    <>
+      <SEO 
+        title="Brand Architecture Process | PRAEQ Talent Management Methodology"
+        description="Discover PRAEQ's strategic brand architecture and talent management process. From discovery and brand strategy consulting to execution and global launch. Our methodology for music artists, influencers, and real estate brand development."
+        canonical="/timeline"
+        keywords="brand architecture process, talent management methodology, brand strategy process, career development roadmap, brand consulting steps, talent agency process, strategic brand development, brand architecture methodology"
+        schema={combinedSchema}
+      />
+      <main className="relative w-full flex flex-col items-center bg-bone font-display text-charcoal pt-20">
       
       {/* Background Shapes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
@@ -15,13 +32,13 @@ const Timeline: React.FC = () => {
       {/* Hero */}
       <section className="relative z-10 pt-16 md:pt-20 pb-12 md:pb-16 px-6 text-center max-w-4xl mx-auto">
         <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 border-b border-bronze/30">
-          <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-bronze font-sans">Methodology</span>
+          <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-bronze font-sans">Brand Architecture Methodology</span>
         </div>
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif tracking-tight text-charcoal mb-6 leading-[1.1]">
-            The Architecture <br/> of <span className="italic font-light">Ascent</span>
+            Strategic Brand <br/> <span className="italic font-light">Development Process</span>
         </h1>
         <p className="text-base sm:text-lg md:text-xl text-charcoal font-sans font-normal leading-relaxed max-w-xl mx-auto">
-            Structuring global legacies through precision management and mathematical execution.
+            Our proven talent management and brand strategy consulting methodology. From discovery to global launch—architecting careers for music artists, influencers, and real estate brands.
         </p>
       </section>
 
@@ -95,15 +112,16 @@ const Timeline: React.FC = () => {
       {/* CTA */}
       <section className="relative z-10 w-full py-20 md:py-24 bg-white border-t border-charcoal/5">
         <div className="max-w-4xl mx-auto px-6 text-center">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-charcoal mb-6">Ready to Build Your Legacy?</h2>
-            <p className="text-base sm:text-lg md:text-xl text-charcoal font-sans font-normal mb-10 max-w-xl mx-auto">The path is charted. The machinery is primed. Begin your ascent with PRAEQ today.</p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-charcoal mb-6">Ready for Strategic Brand Architecture?</h2>
+            <p className="text-base sm:text-lg md:text-xl text-charcoal font-sans font-normal mb-10 max-w-xl mx-auto">Our brand strategy consulting and talent management process is ready. Begin your transformation with PRAEQ today.</p>
             <Link to="/submission" className="inline-flex items-center gap-3 bg-charcoal hover:bg-bronze text-white text-xs uppercase tracking-[0.25em] font-bold px-6 py-3 md:px-8 md:py-4 shadow-xl shadow-charcoal/10 hover:shadow-bronze/20 transition-all transform hover:-translate-y-1">
-                <span>Begin Your Ascent</span>
+                <span>Apply for Consultation</span>
                 <span className="material-symbols-outlined">arrow_outward</span>
             </Link>
         </div>
       </section>
     </main>
+    </>
   );
 };
 

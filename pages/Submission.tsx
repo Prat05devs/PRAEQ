@@ -1,9 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
+import { breadcrumbSchema, organizationSchema } from '../components/schemas';
 
 const Submission: React.FC = () => {
+  const submissionBreadcrumb = breadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Submit Application', url: '/submission' }
+  ]);
+
+  const combinedSchema = [submissionBreadcrumb, organizationSchema];
+
   return (
-    <main className="relative flex min-h-screen w-full flex-col overflow-hidden font-display text-slate-dark pt-24 md:pt-32 bg-bone">
+    <>
+      <SEO 
+        title="Apply for Talent Management | PRAEQ Brand Architecture Consultation"
+        description="Submit your application to PRAEQ's elite talent management program. We partner with exceptional talent in music, influencer marketing, and real estate for strategic brand architecture consulting. Contact us for brand development consultation."
+        canonical="/submission"
+        keywords="talent management application, brand architecture consultation, submit to talent agency, influencer management inquiry, music talent application, brand consulting contact, real estate brand consultation, talent agency submission"
+        schema={combinedSchema}
+      />
+      <main className="relative flex min-h-screen w-full flex-col overflow-hidden font-display text-slate-dark pt-24 md:pt-32 bg-bone">
         
         {/* Architectural Background Lines */}
         <div className="absolute inset-0 pointer-events-none opacity-40">
@@ -17,13 +34,13 @@ const Submission: React.FC = () => {
             <div className="flex flex-col items-center max-w-3xl w-full text-center space-y-12 md:space-y-16 animate-fade-in-up">
                 
                 <div className="space-y-6 md:space-y-8 max-w-2xl mx-auto">
-                    <span className="text-orange-burnished font-sans text-[10px] md:text-[11px] tracking-architectural uppercase font-bold">Pre-Qualification</span>
+                    <span className="text-orange-burnished font-sans text-[10px] md:text-[11px] tracking-architectural uppercase font-bold">Talent Management Application</span>
                     <h1 className="text-charcoal text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif tracking-tight leading-[1.05]">
-                        The Selection <br/>Process
+                        Apply for Elite <br/>Brand Architecture
                     </h1>
                     <div className="w-12 md:w-16 h-[1px] bg-charcoal/20 mx-auto"></div>
                     <p className="font-sans text-charcoal text-base sm:text-lg md:text-xl font-normal tracking-wide leading-relaxed max-w-xl mx-auto">
-                        PRAEQ does not operate on volume. We operate on impact. We are selective by design, partnering only with those who possess the raw talent and the relentless ambition required to become an international icon.
+                        PRAEQ provides strategic brand architecture consulting for exceptional talent only. We partner with music artists, content creators, influencers, and real estate professionals who possess the ambition to become international icons. Submit your application for talent management consultation.
                     </p>
                 </div>
 
@@ -56,6 +73,7 @@ const Submission: React.FC = () => {
             </div>
         </div>
     </main>
+    </>
   );
 };
 

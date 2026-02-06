@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import Home from './pages/Home';
 import Legacy from './pages/Legacy';
 import Ecosystem from './pages/Ecosystem';
@@ -20,10 +21,11 @@ const ScrollToTop = () => {
 
 const App: React.FC = () => {
   return (
-    <HashRouter>
-      <ScrollToTop />
-      <div className="relative min-h-screen flex flex-col font-sans selection:bg-bronze/20 selection:text-charcoal bg-bone">
-        <Navbar />
+    <HelmetProvider>
+      <HashRouter>
+        <ScrollToTop />
+        <div className="relative min-h-screen flex flex-col font-sans selection:bg-bronze/20 selection:text-charcoal bg-bone">
+          <Navbar />
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -37,7 +39,8 @@ const App: React.FC = () => {
         </div>
         <Footer />
       </div>
-    </HashRouter>
+      </HashRouter>
+    </HelmetProvider>
   );
 };
 

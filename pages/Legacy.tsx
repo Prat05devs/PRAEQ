@@ -1,17 +1,34 @@
 import React from 'react';
+import SEO from '../components/SEO';
+import { breadcrumbSchema, organizationSchema } from '../components/schemas';
 
 const Legacy: React.FC = () => {
+  const legacyBreadcrumb = breadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Portfolio', url: '/legacy' }
+  ]);
+
+  const combinedSchema = [legacyBreadcrumb, organizationSchema];
+
   return (
-    <main className="flex-grow w-full max-w-[1920px] mx-auto px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 pt-32 md:pt-48 pb-24 md:pb-32 bg-bone text-charcoal">
+    <>
+      <SEO 
+        title="Brand Architecture Portfolio | PRAEQ Talent Management Case Studies"
+        description="Explore PRAEQ's portfolio of elite talent management and brand architecture projects. From sonic branding for music artists to influencer campaigns and real estate brand development across industries. Industry-agnostic excellence demonstrated."
+        canonical="/legacy"
+        keywords="brand architecture portfolio, talent management case studies, sonic branding examples, influencer campaign portfolio, music talent success stories, real estate branding projects, brand strategy examples, creative agency portfolio"
+        schema={combinedSchema}
+      />
+      <main className="flex-grow w-full max-w-[1920px] mx-auto px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 pt-32 md:pt-48 pb-24 md:pb-32 bg-bone text-charcoal">
       {/* Hero Section */}
       <section className="mb-24 md:mb-40 max-w-5xl">
         <div className="flex flex-col gap-6 md:gap-10 animate-fade-in-up">
           <h1 className="text-charcoal text-5xl sm:text-6xl md:text-8xl font-serif italic tracking-tight leading-[0.9]">
-            The Proof <br /> <span className="not-italic font-light">of Diversity</span>
+            Brand Architecture <br /> <span className="not-italic font-light">Portfolio</span>
           </h1>
           <div className="h-[2px] w-24 md:w-32 bg-orange-burnished"></div>
           <p className="text-charcoal text-lg md:text-2xl lg:text-3xl font-normal leading-relaxed max-w-3xl font-sans text-balance">
-            We do not limit our brilliance to a single domain. We seek out the "Extraordinary" across the spectrum—from high-altitude expeditions to the high-fidelity sound of a recording studio.
+            We architect excellence across every domain. From sonic branding for music artists to influencer management campaigns to real estate brand development—we deliver industry-agnostic talent management and strategic brand consulting that transforms careers and properties into icons.
           </p>
         </div>
       </section>
@@ -127,6 +144,7 @@ const Legacy: React.FC = () => {
         <div className="h-full bg-orange-burnished" style={{ width: '35%' }}></div>
       </div>
     </main>
+    </>
   );
 };
 
