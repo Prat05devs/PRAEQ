@@ -190,6 +190,9 @@ const Home: React.FC = () => {
                  <div className="absolute bottom-[20%] right-[10%] w-28 h-28 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full bg-navy-premium/5 border border-navy-premium/10 shadow-lg flex items-center justify-center animate-float hover:scale-110 transition-transform">
                      <span className="font-bold text-navy-premium text-2xl md:text-3xl font-sans">Bē</span>
                 </div>
+                <div className="absolute bottom-[10%] left-[30%] w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full bg-white border border-charcoal/5 shadow-lg flex items-center justify-center animate-float-delayed hover:scale-110 transition-transform">
+                      <span className="material-symbols-outlined text-2xl md:text-3xl text-olive-deep">videocam</span>
+                </div>
             </div>
         </div>
       </section>
