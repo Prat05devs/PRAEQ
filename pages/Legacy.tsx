@@ -28,7 +28,7 @@ const Legacy: React.FC = () => {
           </h1>
           <div className="h-[2px] w-24 md:w-32 bg-orange-burnished"></div>
           <p className="text-charcoal text-lg md:text-2xl lg:text-3xl font-normal leading-relaxed max-w-3xl font-sans text-balance">
-            We architect excellence across every domain. From sonic branding for music artists to influencer management campaigns to real estate brand development—we deliver industry-agnostic talent management and strategic brand consulting that transforms careers and properties into icons.
+            We architect excellence across every domain. From sonic branding for music artists to influencer management campaigns to real estate brand development - we deliver industry-agnostic talent management and strategic brand consulting that transforms careers and properties into icons.
           </p>
         </div>
       </section>

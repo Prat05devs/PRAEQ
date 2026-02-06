@@ -58,7 +58,7 @@ const Ecosystem: React.FC = () => {
             <p className="text-charcoal/90 max-w-lg font-sans text-base font-normal leading-relaxed">Interact with the network nodes to reveal our content creator management capabilities and media strategy consulting services.</p>
           </div>
           <div className="text-right hidden md:block">
-            <p className="text-[10px] font-mono text-orange-burnished uppercase tracking-widest">Fig 1.1 — Media Strategy System</p>
+            <p className="text-[10px] font-mono text-orange-burnished uppercase tracking-widest">Fig 1.1 / Media Strategy System</p>
           </div>
         </div>
 

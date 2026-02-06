@@ -38,7 +38,7 @@ const Timeline: React.FC = () => {
             Strategic Brand <br/> <span className="italic font-light">Development Process</span>
         </h1>
         <p className="text-base sm:text-lg md:text-xl text-charcoal font-sans font-normal leading-relaxed max-w-xl mx-auto">
-            Our proven talent management and brand strategy consulting methodology. From discovery to global launch—architecting careers for music artists, influencers, and real estate brands.
+            Our proven talent management and brand strategy consulting methodology. From discovery to global launch - architecting careers for music artists, influencers, and real estate brands.
         </p>
       </section>
 

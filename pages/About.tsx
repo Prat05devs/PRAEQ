@@ -19,7 +19,7 @@ const About: React.FC = () => {
     },
     {
       question: "What makes PRAEQ's brand strategy different?",
-      answer: "PRAEQ doesn't just help clients grow—we rebuild the landscape around them so growth becomes inevitable. Our brand architecture philosophy combines strategic brand consulting, visual design, media relations, and industry-agnostic excellence to create unapologetic brand narratives that dominate markets across music, influencer, and real estate sectors."
+      answer: "PRAEQ doesn't just help clients grow - we rebuild the landscape around them so growth becomes inevitable. Our brand architecture philosophy combines strategic brand consulting, visual design, media relations, and industry-agnostic excellence to create unapologetic brand narratives that dominate markets across music, influencer, and real estate sectors."
     }
   ]);
 
@@ -76,7 +76,7 @@ const About: React.FC = () => {
                     <span className="text-bronze font-sans text-[10px] tracking-[0.25em] uppercase block mb-4 font-bold">The Syndicate</span>
                     <h2 className="text-2xl font-serif text-charcoal mb-6">A Strategic Partnership Engine</h2>
                     <p className="text-charcoal/90 text-lg sm:text-xl leading-relaxed font-sans font-normal text-justify">
-                        PRAEQ is a syndicate of master brand strategists, world-class visual architects, and media relations experts working in synchronized rhythm. Prateek's brand architecture vision provides the spark, but our global partnership engine is the fuel. We don't "help" you grow—we architect brand identities and rebuild the competitive landscape around you so that dominance becomes the only possible outcome. From music talent management to influencer partnerships to luxury real estate branding, we create strategic brand narratives that shape industries.
+                        PRAEQ is a syndicate of master brand strategists, world-class visual architects, and media relations experts working in synchronized rhythm. Prateek's brand architecture vision provides the spark, but our global partnership engine is the fuel. We don't "help" you grow - we architect brand identities and rebuild the competitive landscape around you so that dominance becomes the only possible outcome. From music talent management to influencer partnerships to luxury real estate branding, we create strategic brand narratives that shape industries.
                     </p>
                 </div>
 
@@ -90,7 +90,7 @@ const About: React.FC = () => {
                         </div>
                         <div>
                             <h3 className="text-lg font-sans font-semibold text-charcoal mb-2">What makes PRAEQ's brand strategy different?</h3>
-                            <p className="text-charcoal/80 text-base leading-relaxed font-sans">PRAEQ doesn't just help clients grow—we rebuild the landscape around them so growth becomes inevitable. Our brand architecture philosophy combines strategic consulting, visual design, media relations, and industry-agnostic excellence to create brand narratives that dominate markets.</p>
+                            <p className="text-charcoal/80 text-base leading-relaxed font-sans">PRAEQ doesn't just help clients grow - we rebuild the landscape around them so growth becomes inevitable. Our brand architecture philosophy combines strategic consulting, visual design, media relations, and industry-agnostic excellence to create brand narratives that dominate markets.</p>
                         </div>
                     </div>
                 </div>

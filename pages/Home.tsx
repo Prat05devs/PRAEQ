@@ -13,11 +13,11 @@ const Home: React.FC = () => {
   const homeFAQs = [
     {
       question: "What services does PRAEQ offer?",
-      answer: "PRAEQ is an elite talent management and brand architecture firm offering three core services: Sonic Spectrum (music talent management, artist development, and sonic branding), Dialogue Axis (influencer management, content creator partnerships, and media strategy), and Estate Vision (real estate brand development and property branding). We work across all industries with Fortune 500 companies and emerging brands globally."
+      answer: "PRAEQ is an elite talent management and brand architecture firm offering three core services: Sonic Spectrum (music talent management, artist development, and sonic branding), Dialogue Axis (influencer management, content creator partnerships, and media strategy), and Estate Vision (real estate brand development and property branding)."
     },
     {
       question: "How is PRAEQ different from traditional talent agencies?",
-      answer: "Unlike traditional talent agencies that focus solely on representation, PRAEQ combines elite talent management with strategic brand architecture. We don't just place talent—we architect entire brand narratives, create sonic identities, build multi-platform strategies, and develop comprehensive brand ecosystems. We're industry-agnostic, working across music, media, real estate, technology, fashion, hospitality, and more."
+      answer: "Unlike traditional talent agencies that focus solely on representation, PRAEQ combines elite talent management with strategic brand architecture. We don't just place talent - we architect entire brand narratives, create sonic identities, build multi-platform strategies, and develop comprehensive brand ecosystems. We're industry-agnostic, working across music, media, real estate, technology, fashion, hospitality, and more."
     },
     {
       question: "What industries does PRAEQ work with?",
@@ -86,7 +86,7 @@ const Home: React.FC = () => {
           </div>
           <div className="w-full lg:w-5/12 pb-4 lg:pb-8">
             <div className="flex items-center gap-4 mb-6 md:mb-8">
-              <span className="text-[10px] md:text-[11px] font-bold tracking-architectural text-orange-burnished">01 — STRATEGY</span>
+              <span className="text-[10px] md:text-[11px] font-bold tracking-architectural text-orange-burnished">01 / STRATEGY</span>
               <span className="h-[1px] w-12 md:w-16 bg-charcoal/10"></span>
             </div>
             <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-none mb-6 md:mb-10 text-charcoal">Strategic Brand Architecture</h2>
@@ -113,11 +113,11 @@ const Home: React.FC = () => {
           <div className="w-full lg:w-5/12 pt-0 lg:pt-24 flex flex-col items-start lg:items-end lg:text-right">
             <div className="flex items-center gap-4 mb-6 md:mb-8">
               <span className="h-[1px] w-12 md:w-16 bg-charcoal/10 hidden lg:block"></span>
-              <span className="text-[10px] md:text-[11px] font-bold tracking-architectural text-olive-deep">02 — DIVERSITY</span>
+              <span className="text-[10px] md:text-[11px] font-bold tracking-architectural text-olive-deep">02 / DIVERSITY</span>
             </div>
             <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-none mb-6 md:mb-10 text-charcoal">Industry-Agnostic Excellence</h2>
             <p className="font-sans font-normal text-base sm:text-lg md:text-xl leading-7 md:leading-9 text-charcoal/90 text-justify lg:text-right mb-8 md:mb-12 max-w-md">
-              From sonic branding for luxury brands to influencer management for digital creators, we deliver brand strategy consulting across every industry. Music, media, real estate, technology—our expertise transcends traditional boundaries.
+              From sonic branding for luxury brands to influencer management for digital creators, we deliver brand strategy consulting across every industry. Music, media, real estate, technology - our expertise transcends traditional boundaries.
             </p>
             <Link to="/legacy" className="group inline-flex items-center gap-3 text-[10px] md:text-[11px] font-bold uppercase tracking-architectural text-charcoal hover:text-olive-deep transition-colors">
               View Blueprints
