@@ -107,7 +107,7 @@ const Home: React.FC = () => {
           <Link to="/legacy" className="group relative flex-1 min-h-[400px] lg:min-h-0 lg:h-auto overflow-hidden transition-all duration-700 ease-out lg:hover:flex-[1.5] bg-navy-premium cursor-pointer border-b lg:border-b-0 lg:border-r border-white/5">
             <img 
               alt="Sonic Spectrum" 
-              className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-all duration-1000 grayscale group-hover:grayscale-0 scale-100 group-hover:scale-105" 
+              className="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-80 transition-all duration-1000 grayscale group-hover:grayscale-0 scale-100 group-hover:scale-105" 
               src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2670&auto=format&fit=crop" 
             />
             <div className="absolute inset-0 bg-navy-premium/50 mix-blend-multiply z-10"></div>
@@ -126,8 +126,8 @@ const Home: React.FC = () => {
           <Link to="/ecosystem" className="group relative flex-1 min-h-[400px] lg:min-h-0 lg:h-auto overflow-hidden transition-all duration-700 ease-out lg:hover:flex-[1.5] bg-olive-deep cursor-pointer border-b lg:border-b-0 lg:border-r border-white/5">
             <img 
               alt="Dialogue Axis" 
-              className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-all duration-1000 grayscale group-hover:grayscale-0 scale-100 group-hover:scale-105" 
-              src="https://images.unsplash.com/photo-1478737270239-2f02b77ac6d5?q=80&w=2670&auto=format&fit=crop" 
+              className="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-80 transition-all duration-1000 grayscale group-hover:grayscale-0 scale-100 group-hover:scale-105" 
+              src="/media.jpg" 
             />
             <div className="absolute inset-0 bg-olive-deep/50 mix-blend-multiply z-10"></div>
             <div className="absolute inset-0 p-8 md:p-10 lg:p-16 flex flex-col justify-end z-20">
@@ -145,10 +145,10 @@ const Home: React.FC = () => {
           <Link to="/global" className="group relative flex-1 min-h-[400px] lg:min-h-0 lg:h-auto overflow-hidden transition-all duration-700 ease-out lg:hover:flex-[1.5] bg-orange-burnished cursor-pointer">
             <img 
               alt="Estate Vision" 
-              className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-all duration-1000 grayscale group-hover:grayscale-0 scale-100 group-hover:scale-105" 
-              src="https://images.unsplash.com/photo-1506103901173-047b30c946cc?q=80&w=2670&auto=format&fit=crop" 
+              className="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-80 transition-all duration-1000 grayscale group-hover:grayscale-0 scale-100 group-hover:scale-105" 
+              src="/himalaya.jpg" 
             />
-             <div className="absolute inset-0 bg-orange-burnished/50 mix-blend-multiply z-10"></div>
+             <div className="absolute inset-0 bg-orange-burnished/20 mix-blend-multiply z-10"></div>
             <div className="absolute inset-0 p-8 md:p-10 lg:p-16 flex flex-col justify-end z-20">
               <div className="transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
                 <span className="inline-block text-[9px] md:text-[10px] uppercase tracking-architectural text-white/80 mb-4 md:mb-6 border border-white/20 px-3 py-1 bg-orange-burnished/40 backdrop-blur-sm">House III</span>

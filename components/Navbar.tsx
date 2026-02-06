@@ -36,11 +36,12 @@ const Navbar: React.FC = () => {
       <nav 
         className={`fixed top-0 w-full z-50 transition-all duration-500 flex justify-between items-center ${
           isAbout
-            ? 'bg-charcoal shadow-sm py-4 px-6 md:px-12 lg:px-16'
+            ? 'shadow-md py-4 px-6 md:px-12 lg:px-16'
             : isScrolled 
             ? 'bg-bone/95 backdrop-blur-md shadow-sm py-4 px-6 md:px-12 lg:px-16' 
             : 'bg-transparent py-6 md:py-8 px-6 md:px-12 lg:px-16'
         }`}
+        style={isAbout ? {backgroundColor: '#3A3A3A'} : {}}
       >
         <Link to="/" className={logoClass} style={logoStyle} onClick={() => setMobileMenuOpen(false)}>
           PRAEQ

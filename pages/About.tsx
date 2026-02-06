@@ -2,8 +2,8 @@ import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <main className="flex-grow pt-0 md:pt-20 bg-bone">
-      <div className="w-full flex flex-col lg:flex-row min-h-[90vh]">
+    <main className="flex-grow bg-bone">
+      <div className="w-full flex flex-col lg:flex-row min-h-[100vh]">
         <div className="w-full lg:w-1/2 relative lg:sticky lg:top-0 h-[50vh] lg:h-screen overflow-hidden bg-[#e5e5e5]">
           <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-transparent to-bone lg:hidden"></div>
           <img 
@@ -59,15 +59,11 @@ const About: React.FC = () => {
                 </div>
                  <div className="flex flex-col gap-2">
                     <span className="text-bronze text-[9px] uppercase tracking-widest font-sans font-bold">Visual Architecture</span>
-                    <span className="text-charcoal font-serif text-lg italic border-b border-charcoal/5 pb-2">Creative Labs</span>
+                    <span className="text-charcoal font-serif text-lg italic border-b border-charcoal/5 pb-2">Axocom Media</span>
                 </div>
                  <div className="flex flex-col gap-2">
                     <span className="text-bronze text-[9px] uppercase tracking-widest font-sans font-bold">Media Relations</span>
-                    <span className="text-charcoal font-serif text-lg italic border-b border-charcoal/5 pb-2">Vogue Comm.</span>
-                </div>
-                 <div className="flex flex-col gap-2">
-                    <span className="text-bronze text-[9px] uppercase tracking-widest font-sans font-bold">Legal</span>
-                    <span className="text-charcoal font-serif text-lg italic border-b border-charcoal/5 pb-2">Sterling Partners</span>
+                    <span className="text-charcoal font-serif text-lg italic border-b border-charcoal/5 pb-2">Saffron Hill Studio</span>
                 </div>
              </div>
            </div>
