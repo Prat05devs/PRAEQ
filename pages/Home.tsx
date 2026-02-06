@@ -163,7 +163,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Connect With Us: Top Layer (Linen) for Strong Warmth */}
-      <section className="relative w-full pb-24 md:pb-32 lg:pb-48 bg-linen overflow-hidden border-t border-charcoal/5">
+      <section className="relative w-full py-24 md:py-32 lg:py-48 bg-linen overflow-hidden border-t border-charcoal/5">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 relative z-10 flex flex-col md:flex-row items-center gap-16 md:gap-24">
             
             <div className="w-full md:w-1/2 text-center md:text-left">
