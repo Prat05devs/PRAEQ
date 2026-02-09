@@ -20,13 +20,13 @@ const Navbar: React.FC = () => {
 
   // Updated typography styles for better readability and hierarchy
   const navLinkClass = `text-[12px] lg:text-[13px] uppercase tracking-architectural font-bold transition-colors duration-300 font-sans ${
-    isEcosystem || isAbout ? 'hover:text-[#D97642]' : isHome ? 'text-charcoal hover:text-[#D97642]' : 'text-slate-dark hover:text-[#D97642]'
+    isEcosystem || isAbout ? 'hover:text-[#D97642]' : isHome ? (isScrolled ? 'text-charcoal' : 'text-[#d4d3d3]') + ' hover:text-[#D97642]' : 'text-slate-dark hover:text-[#D97642]'
   }`;
   
   const navLinkStyle = (isEcosystem || isAbout) ? { color: '#F5F5F0' } : {};
   
   const logoClass = `text-2xl md:text-3xl font-serif font-bold tracking-tight z-50 transition-colors duration-300 ${
-    isEcosystem || isAbout ? '' : isHome ? 'text-charcoal' : 'text-slate-dark'
+    isEcosystem || isAbout ? '' : isHome ? (isScrolled ? 'text-charcoal' : 'text-[#d4d3d3]') : 'text-slate-dark'
   } ${mobileMenuOpen ? '!text-charcoal' : ''}`;
   
   const logoStyle = (isEcosystem || isAbout) ? { color: '#F5F5F0' } : {};
@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
               isEcosystem || isAbout
               ? 'hover:bg-[#F5F5F0] hover:text-charcoal'
               : isHome 
-              ? 'text-charcoal border-charcoal hover:bg-charcoal hover:text-bone' 
+              ? (isScrolled ? 'text-charcoal border-charcoal' : 'text-[#d4d3d3] border-[#d4d3d3]') + ' hover:bg-charcoal hover:text-bone' 
               : 'text-navy-premium border-navy-premium hover:bg-navy-premium hover:text-bone'
           }`} style={(isEcosystem || isAbout) ? {color: '#F5F5F0', borderColor: '#F5F5F0'} : {}}>
             Inquiry

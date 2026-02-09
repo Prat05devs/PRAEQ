@@ -53,16 +53,16 @@ const Home: React.FC = () => {
             alt="Hero Background"
             className="w-full h-full object-cover opacity-50 mix-blend-multiply filter contrast-100 grayscale-[20%]"
           />
-          {/* Enhanced Overlay for text readability - Using new Cream (bone) color */}
-          <div className="absolute inset-0 bg-bone/10 backdrop-blur-[1px]"></div>
+          {/* Premium Black Fade Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-black/80 backdrop-blur-[1px]"></div>
         </div>
         
         <div className={`relative z-10 text-center transition-all duration-1000 ease-out transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} max-w-[90%] md:max-w-5xl mx-auto mt-12 md:mt-0`}>
-          <h1 className="font-serif text-[13vw] sm:text-[12vw] md:text-[10vw] lg:text-[9vw] xl:text-[8vw] leading-[0.85] select-none tracking-tight opacity-100 uppercase mix-blend-multiply" style={{color: '#1C1E1D', textShadow: '0 4px 16px rgba(0, 0, 0, 0.4), 0 2px 6px rgba(0, 0, 0, 0.25)'}}>
+          <h1 className="font-serif text-[13vw] sm:text-[12vw] md:text-[10vw] lg:text-[9vw] xl:text-[8vw] leading-[0.85] select-none tracking-tight opacity-100 uppercase mix-blend-multiply" style={{color: '#d4d3d3', textShadow: '0 4px 16px rgba(0, 0, 0, 0.4), 0 2px 6px rgba(0, 0, 0, 0.25)'}}>
             We Architect<br/>Icons
           </h1>
           <div className="mt-8 md:mt-16 flex flex-col items-center gap-6 md:gap-8 max-w-xl lg:max-w-3xl mx-auto">
-            <p className="font-sans font-normal text-base sm:text-lg md:text-2xl leading-relaxed text-balance px-4" style={{color: '#F5F5F0', textShadow: '0 4px 12px rgba(0, 0, 0, 0.5), 0 2px 4px rgba(0, 0, 0, 0.3)'}}>
+            <p className="font-sans font-normal text-base sm:text-lg md:text-2xl leading-relaxed text-balance px-4" style={{color: '#ababab', textShadow: '0 4px 12px rgba(0, 0, 0, 0.5), 0 2px 4px rgba(0, 0, 0, 0.3)'}}>
               We architect global brands through sonic branding, influencer strategy, and real estate innovation.<br className="hidden md:block"/>
               Industry-agnostic excellence for music talent, content creators, and luxury brands.
             </p>
