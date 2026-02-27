@@ -49,7 +49,7 @@ const Home: React.FC = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="/HeroBG.jpg" 
+            src="/homeBG.jpg" 
             alt="Hero Background"
             className="w-full h-full object-cover opacity-50 mix-blend-multiply filter contrast-100 grayscale-[20%]"
           />

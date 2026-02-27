@@ -41,7 +41,7 @@ const About: React.FC = () => {
           <img 
             alt="Brand Architecture Founder - Strategic Brand Consulting" 
             className="w-full h-full object-cover object-top filter grayscale contrast-[1.1] brightness-[1.1] opacity-90 mix-blend-multiply" 
-            src="/about.png" 
+            src="/about.jpg" 
           />
           <div className="absolute bottom-6 left-6 lg:bottom-12 lg:left-12 z-20 hidden lg:block">
             <div className="h-16 w-32 relative">
