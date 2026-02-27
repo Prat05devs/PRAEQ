@@ -38,7 +38,7 @@ const Home: React.FC = () => {
         title="Elite Talent Management & Global Brand Architecture"
         description="PRAEQ is a high-performance talent management and brand architecture firm. We architect sonic identities, influencer strategies, and real estate brands across industries. Industry-agnostic excellence for Fortune 500 and emerging brands."
         canonical="/"
-        ogImage="/HeroBG.jpg"
+        ogImage="/praeqLogo.jpg"
         keywords="talent management agency, brand architecture firm, sonic branding agency, influencer management company, music talent management, real estate brand consulting, creative talent management, global talent agency, brand strategy consulting, audio branding agency"
         schema={schemas}
       />
