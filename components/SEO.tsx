@@ -20,13 +20,15 @@ const SEO: React.FC<SEOProps> = ({
   keywords,
   schema
 }) => {
-  const siteUrl = 'https://www.praeq.com';
+  const siteUrl = 'https://www.praeq.in';
   const fullTitle = title.includes('PRAEQ') ? title : `${title} | PRAEQ`;
   const fullCanonical = canonical ? `${siteUrl}${canonical}` : siteUrl;
   const fullOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
   
   return (
     <Helmet>
+      {/* Google Search Console Site Verification */}
+      <meta name="google-site-verification" content="G2Hm3FBmkFuk6IJR8ubLnuYsTNZLCIVEQlICzgNWh_E" />
       {/* Primary Meta Tags */}
       <title>{fullTitle}</title>
       <meta name="title" content={fullTitle} />

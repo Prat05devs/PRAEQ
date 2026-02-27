@@ -5,15 +5,15 @@ export const organizationSchema = {
   "@type": "Organization",
   "name": "PRAEQ",
   "alternateName": ["PRAEQ Talent Management", "PRAEQ Global", "PRAEQ Brand Architecture"],
-  "url": "https://www.praeq.com",
-  "logo": "https://www.praeq.com/logo.png",
+  "url": "https://www.praeq.in",
+  "logo": "https://www.praeq.in/logo.png",
   "description": "Elite talent management and global brand architecture firm specializing in sonic branding, media influence, and real estate innovation. Industry-agnostic solutions for Fortune 500 companies and emerging brands.",
   "foundingDate": "2024",
   "slogan": "Architecting Excellence. Managing Legends.",
   "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "Business Inquiries",
-    "email": "info@praeq.com",
+    "email": "info@praeq.in",
     "availableLanguage": ["English"]
   },
   "sameAs": [
@@ -42,7 +42,8 @@ export const serviceSchema = {
   "serviceType": "Talent Management & Brand Architecture",
   "provider": {
     "@type": "Organization",
-    "name": "PRAEQ"
+    "name": "PRAEQ",
+    "url": "https://www.praeq.in"
   },
   "areaServed": {
     "@type": "Place",
@@ -90,7 +91,7 @@ export const breadcrumbSchema = (items: Array<{ name: string; url: string }>) =>
     "@type": "ListItem",
     "position": index + 1,
     "name": item.name,
-    "item": `https://www.praeq.com${item.url}`
+    "item": `https://www.praeq.in${item.url}`
   }))
 });
 
@@ -111,10 +112,10 @@ export const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "PRAEQ",
-  "url": "https://www.praeq.com",
+  "url": "https://www.praeq.in",
   "potentialAction": {
     "@type": "SearchAction",
-    "target": "https://www.praeq.com/search?q={search_term_string}",
+    "target": "https://www.praeq.in/search?q={search_term_string}",
     "query-input": "required name=search_term_string"
   }
 };

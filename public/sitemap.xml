@@ -5,7 +5,7 @@
   
   <!-- Home Page - Highest Priority -->
   <url>
-    <loc>https://praeq.com/</loc>
+    <loc>https://www.praeq.in/</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -13,7 +13,7 @@
   
   <!-- About Page - Brand Architecture Philosophy -->
   <url>
-    <loc>https://praeq.com/#/about</loc>
+    <loc>https://www.praeq.in/#/about</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -21,7 +21,7 @@
   
   <!-- Ecosystem Page - Influencer Management -->
   <url>
-    <loc>https://praeq.com/#/ecosystem</loc>
+    <loc>https://www.praeq.in/#/ecosystem</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -29,7 +29,7 @@
   
   <!-- Portfolio Page - Case Studies -->
   <url>
-    <loc>https://praeq.com/#/legacy</loc>
+    <loc>https://www.praeq.in/#/legacy</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -37,7 +37,7 @@
   
   <!-- Timeline Page - Process & Methodology -->
   <url>
-    <loc>https://praeq.com/#/timeline</loc>
+    <loc>https://www.praeq.in/#/timeline</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -45,7 +45,7 @@
   
   <!-- Global Map Page - International Network -->
   <url>
-    <loc>https://praeq.com/#/globalmap</loc>
+    <loc>https://www.praeq.in/#/globalmap</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -53,7 +53,7 @@
   
   <!-- Submission Page - Contact & Application -->
   <url>
-    <loc>https://praeq.com/#/submission</loc>
+    <loc>https://www.praeq.in/#/submission</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

@@ -30,7 +30,7 @@ User-agent: Bytespider
 Allow: /
 
 # Sitemap Location
-Sitemap: https://praeq.com/sitemap.xml
+Sitemap: https://www.praeq.in/sitemap.xml
 
 # Crawl-delay for courtesy
 Crawl-delay: 1
